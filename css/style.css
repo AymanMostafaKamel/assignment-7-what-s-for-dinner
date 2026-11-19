@@ -1,0 +1,160 @@
+:root {
+    --gradient: linear-gradient(to bottom right, #FF6200, #FC3A2D);
+    --orange-primary: #FF6200;
+}
+
+.navbar-brand {
+    background: var(--gradient);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: var(--orange-primary);
+    color: white;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #101828;
+}
+
+.title p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6a7282;
+}
+
+nav {
+    border-bottom: solid 2px #FFEDD4;
+}
+
+#main-content {
+    padding-block: 32px;
+}
+
+.card-body {
+    padding: 40px;
+    scrollbar-color: #fcc5a1 #f1f1f1;
+    scrollbar-width: thin;
+}
+
+#nav-tabs .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #6a7282;
+}
+
+
+.nav-pills {
+    --bs-nav-pills-border-radius: none;
+    --bs-nav-pills-link-active-bg: none;
+}
+
+.nav-pills .active {
+    color: #F54A00 !important;
+}
+
+.nav-pills button:hover {
+    color: #495057 !important;
+}
+
+.nav-pills button {
+    position: relative;
+}
+
+.nav-pills button.active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F54A00;
+}
+
+.card {
+    border-color: #FFEDD4;
+}
+
+#imgSection .badge .rate {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #101828;
+}
+
+#imgSection .badge .review {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6a7282;
+}
+
+#infoSection button {
+    background-color: rgba(245, 74, 0, 0.1);
+}
+
+#infoSection button:hover {
+    background-color: rgba(245, 74, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    display: inline-block;
+}
+
+
+.button {
+    background: var(--gradient);
+    transition: transform 1s ease-in-out;
+
+}
+
+.button:hover{
+    scale: 1.05;
+    background: linear-gradient(to top left, #FF6200, #FC3A2D);
+}
+
+#imgSection {
+    height: 350px;
+}
+
+@media (min-width: 768px) {
+    .recipe-card {
+        height: 95vh;
+    }
+
+    .recipe-card .row,
+    .recipe-card .col-md-7,
+    .recipe-card .card-body {
+        height: 100%;
+    }
+
+    .recipe-card .card-body {
+        overflow-y: auto;
+    }
+
+    #imgSection {
+        height: auto;
+    }
+}
